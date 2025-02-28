@@ -6,17 +6,16 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: #f5f1e9; /* Beige, Luxe-inspired */
+    background: #f5f1e9; /* Beige */
     color: #333;
     line-height: 1.6;
 }
 
 .hero {
     text-align: center;
-    padding: 120px 20px;
+    padding: 100px 20px;
     background: linear-gradient(to bottom, rgba(245, 241, 233, 0.8), #f5f1e9);
-    position: relative;
-    min-height: 50vh;
+    min-height: 40vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,13 +29,19 @@ h1 {
     font-family: 'Didot', serif;
     font-size: 60px;
     letter-spacing: 2px;
-    color: #2c2c2c; /* Dark gray */
+    color: #2c2c2c;
     margin-bottom: 10px;
 }
 
 header p {
     font-size: 22px;
     color: #666;
+}
+
+.contact {
+    font-size: 18px;
+    color: #888;
+    margin-top: 5px;
 }
 
 main {
@@ -50,6 +55,58 @@ h2 {
     font-size: 36px;
     margin-bottom: 30px;
     color: #2c2c2c;
+}
+
+.resume-tiles {
+    margin-bottom: 60px;
+}
+
+.tile-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.tile {
+    background: #fff;
+    padding: 25px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+.tile .overview {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.tile .details {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.tile .details h3 {
+    font-size: 18px;
+    color: #2c2c2c;
+    margin-bottom: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    color: #2c2c2c;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+.toggle-btn:hover {
+    text-decoration: underline;
 }
 
 .projects {
@@ -102,46 +159,23 @@ h2 {
     background: #4a4a4a;
 }
 
-.resume {
+.cta {
+    text-align: center;
     margin-bottom: 60px;
-    background: #fff;
-    padding: 25px;
-    border: 1px solid #e0e0e0;
-    border-radius: 5px;
 }
 
-.resume-content p {
-    margin-bottom: 15px;
+.cta p {
+    font-size: 18px;
 }
 
-.resume-content a {
+.cta a {
     color: #2c2c2c;
     text-decoration: none;
     font-weight: bold;
 }
 
-.resume-content a:hover {
+.cta a:hover {
     text-decoration: underline;
-}
-
-.github {
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.github-btn {
-    display: inline-block;
-    padding: 12px 24px;
-    background: #2c2c2c;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 3px;
-    font-weight: bold;
-    transition: background 0.3s;
-}
-
-.github-btn:hover {
-    background: #4a4a4a;
 }
 
 footer {
